@@ -6,7 +6,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { useToast } from '@/components/ui/use-toast';
-import { ArrowLeft, Seedling } from 'lucide-react';
+import { ArrowLeft, Leaf } from 'lucide-react';
 
 const AddCrop: React.FC = () => {
   const { addCrop } = useData();
@@ -68,7 +68,7 @@ const AddCrop: React.FC = () => {
       <Card>
         <CardHeader>
           <div className="flex items-center mb-2">
-            <Seedling className="h-6 w-6 text-krishi-green mr-2" />
+            <Leaf className="h-6 w-6 text-krishi-green mr-2" />
             <CardTitle>Add New Crop</CardTitle>
           </div>
           <CardDescription>
