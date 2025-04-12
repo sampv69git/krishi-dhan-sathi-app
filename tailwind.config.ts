@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,7 +62,32 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// KrishiLakshya custom colors
+				'krishi-green': {
+					light: '#4CAF50',
+					DEFAULT: '#2E7D32',
+					dark: '#1B5E20'
+				},
+				'krishi-brown': {
+					light: '#8D6E63',
+					DEFAULT: '#5D4037',
+					dark: '#3E2723'
+				},
+				'krishi-blue': {
+					light: '#64B5F6',
+					DEFAULT: '#2196F3',
+					dark: '#1565C0'
+				},
+				'krishi-yellow': {
+					light: '#FFF176',
+					DEFAULT: '#FFEB3B',
+					dark: '#FBC02D'
 				}
+			},
+			fontFamily: {
+				sans: ['Poppins', 'sans-serif'],
+				heading: ['Lato', 'sans-serif']
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
