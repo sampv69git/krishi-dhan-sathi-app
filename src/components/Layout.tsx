@@ -1,10 +1,9 @@
-
 import React from 'react';
 import { Outlet, useLocation, useNavigate } from 'react-router-dom';
 import { useAuth } from '../contexts/AuthContext';
 import { Button } from '@/components/ui/button';
 import { Separator } from '@/components/ui/separator';
-import { LayoutDashboard, Plant, ArrowDownCircle, ArrowUpCircle, LogOut, BarChart3, User, Menu, X } from 'lucide-react';
+import { LayoutDashboard, Seedling, ArrowDownCircle, ArrowUpCircle, LogOut, BarChart3, User, Menu, X } from 'lucide-react';
 import { ScrollArea } from '@/components/ui/scroll-area';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { useToast } from '@/components/ui/use-toast';
@@ -19,7 +18,7 @@ const NAV_ITEMS = [
   {
     title: 'Crops',
     href: '/crops',
-    icon: <Plant className="h-5 w-5" />,
+    icon: <Seedling className="h-5 w-5" />,
   },
   {
     title: 'Expenses',

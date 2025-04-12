@@ -1,9 +1,8 @@
-
 import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../contexts/AuthContext';
 import { Button } from '@/components/ui/button';
-import { Plant } from 'lucide-react';
+import { Seedling } from 'lucide-react';
 
 const Index = () => {
   const { user } = useAuth();
@@ -20,7 +19,7 @@ const Index = () => {
     <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-b from-white to-green-50 px-4">
       <div className="max-w-3xl text-center">
         <div className="mb-8 inline-flex items-center justify-center w-16 h-16 rounded-full bg-green-100">
-          <Plant className="h-8 w-8 text-krishi-green" />
+          <Seedling className="h-8 w-8 text-krishi-green" />
         </div>
         
         <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">

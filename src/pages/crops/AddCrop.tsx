@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useData } from '../../contexts/DataContext';
@@ -7,7 +6,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { useToast } from '@/components/ui/use-toast';
-import { ArrowLeft, Plant } from 'lucide-react';
+import { ArrowLeft, Seedling } from 'lucide-react';
 
 const AddCrop: React.FC = () => {
   const { addCrop } = useData();
@@ -69,7 +68,7 @@ const AddCrop: React.FC = () => {
       <Card>
         <CardHeader>
           <div className="flex items-center mb-2">
-            <Plant className="h-6 w-6 text-krishi-green mr-2" />
+            <Seedling className="h-6 w-6 text-krishi-green mr-2" />
             <CardTitle>Add New Crop</CardTitle>
           </div>
           <CardDescription>

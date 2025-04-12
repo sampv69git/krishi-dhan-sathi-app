@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../contexts/AuthContext';
@@ -6,7 +5,7 @@ import { useData } from '../contexts/DataContext';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Separator } from '@/components/ui/separator';
-import { ArrowUpCircle, ArrowDownCircle, TrendingUp, Plant, Leaf, ShoppingBag, IndianRupee } from 'lucide-react';
+import { ArrowUpCircle, ArrowDownCircle, TrendingUp, Seedling, Leaf, ShoppingBag, IndianRupee } from 'lucide-react';
 
 const Dashboard: React.FC = () => {
   const { user } = useAuth();
@@ -71,7 +70,7 @@ const Dashboard: React.FC = () => {
         <div>
           <div className="flex justify-between items-center mb-4">
             <h2 className="text-xl font-bold flex items-center">
-              <Plant className="mr-2 h-5 w-5 text-krishi-green" />
+              <Seedling className="mr-2 h-5 w-5 text-krishi-green" />
               Active Crops
             </h2>
             <Button 
@@ -190,7 +189,6 @@ const Dashboard: React.FC = () => {
             <Card>
               <CardContent className="p-0">
                 <ul className="divide-y">
-                  {/* Combine and sort expenses and incomes by date */}
                   {[...expenses, ...incomes]
                     .sort((a, b) => b.date.getTime() - a.date.getTime())
                     .slice(0, 5)
@@ -244,7 +242,7 @@ const Dashboard: React.FC = () => {
             className="h-auto py-4 bg-krishi-green hover:bg-krishi-green-dark flex flex-col items-center"
             onClick={() => navigate('/crops/add')}
           >
-            <Plant className="h-6 w-6 mb-2" />
+            <Seedling className="h-6 w-6 mb-2" />
             <span>Add Crop</span>
           </Button>
           <Button 
